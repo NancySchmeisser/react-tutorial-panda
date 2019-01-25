@@ -26,6 +26,7 @@ class DeciderDice extends Component<any, any> {
         return (
             <div className="DeciderDice">
                <img className="DeciderDice" src={this.state.image}/>
+               <button onClick={this.props.onBackClick}>Zurück</button>
             </div>
         );
     }

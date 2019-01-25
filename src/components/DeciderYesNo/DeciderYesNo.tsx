@@ -16,7 +16,8 @@ class DeciderYesNo extends Component<any, any> {
     render() {
         return (
             <div className="DeciderYesNo">
-                <span>{this.state.decision}</span>
+                <div>{this.state.decision}</div>
+                <button onClick={this.props.onBackClick}>Zurück</button>
             </div>
         );
     }
