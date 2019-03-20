@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
-class DeciderYesNo extends Component<any, any> {
+
+interface DeciderYesNoProps {
+    onBackClick: () => void,
+}
+interface DeciderYesNoState {
+    decision: string,
+}
+
+class DeciderYesNo extends Component<DeciderYesNoProps, DeciderYesNoState> {
 
     private yesTexts: string[] = ["Ja", "Jawoll", "Sicher", "Klar"];
     private noTexts: string[] = ["Nein", "Niemals", "Neehe"];
