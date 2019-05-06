@@ -8,8 +8,16 @@ import Six from './Six.png';
 import Animated from './animated.gif';
 import './DeciderDice.css';
 
+interface DeciderDiceProps {
+    onBackClick: () => void,
+}
 
-class DeciderDice extends Component<any, any> {
+interface DeciderDiceState {
+    result: number,
+    image: string,
+}
+
+class DeciderDice extends Component<DeciderDiceProps, DeciderDiceState> {
 
     private diceImages: string[]=[One, Two, Three, Four, Five, Six]
    
@@ -25,7 +33,7 @@ class DeciderDice extends Component<any, any> {
     render() {
         return (
             <div className="DeciderDice">
-               <img className="DeciderDice" src={this.state.image}/>
+               <img className="ImageDice" src={this.state.image}/>
                <button onClick={this.props.onBackClick}>Zurück</button>
             </div>
         );

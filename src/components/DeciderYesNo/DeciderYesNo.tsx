@@ -13,7 +13,7 @@ class DeciderYesNo extends Component<DeciderYesNoProps, DeciderYesNoState> {
     private yesTexts: string[] = ["Ja", "Jawoll", "Sicher", "Klar"];
     private noTexts: string[] = ["Nein", "Niemals", "Neehe"];
     
-    constructor (props:any) {
+    constructor (props:DeciderYesNoProps) {
         super(props);
 
         const yesNo: number=Math.round(Math.random());
@@ -24,8 +24,8 @@ class DeciderYesNo extends Component<DeciderYesNoProps, DeciderYesNoState> {
     render() {
         return (
             <div className="DeciderYesNo">
-                <div>{this.state.decision}</div>
-                <button onClick={this.props.onBackClick}>Zurück</button>
+                <div className="Decision">{this.state.decision}</div>
+                <button onClick={ this.props.onBackClick}>Zurück</button>
             </div>
         );
     }
