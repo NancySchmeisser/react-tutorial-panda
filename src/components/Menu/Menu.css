@@ -1,8 +1,8 @@
  .Menu {
      background-color: rgb(221, 212, 212);
-     margin: 20px;
-     padding: 50px;
-     position: 
+     margin: 10px;
+     padding: 80px;
+     position: absolute;
  }
 
  h1 {
@@ -11,6 +11,7 @@
      border: none;
      padding: 50px;
      border-radius: 50%;
+     position: relative;
 
  }
 
@@ -25,8 +26,8 @@
      font-size: 24px;
      border-radius: 50%;
      cursor: pointer;
-     float: left;
-     
+     position: relative;
+
  }
 
  .JaNein {
@@ -39,8 +40,8 @@
      text-decoration: none;
      font-size: 24px;
      border-radius: 50%;
-     float: left;
      cursor: pointer;
+     position: relative;
 
  }
 
@@ -48,10 +49,9 @@
 
  img {
      size: 20em;
-     position: static;
-     float: left;
+     position: relative;
  }
 
-    button:hover {
-    background-color: blue;
-  }
+ button:hover {
+     background-color: blue;
+ }
