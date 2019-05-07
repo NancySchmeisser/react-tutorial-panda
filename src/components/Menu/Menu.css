@@ -26,7 +26,7 @@
      font-size: 24px;
      border-radius: 50%;
      cursor: pointer;
-     position: relative;
+    float: left;
 
  }
 
@@ -41,8 +41,21 @@
      font-size: 24px;
      border-radius: 50%;
      cursor: pointer;
-     position: relative;
+   float: left;
 
+ }
+
+ .Group {
+    background-color: rgb(81, 81, 241);
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+ float: left;
  }
 
 
