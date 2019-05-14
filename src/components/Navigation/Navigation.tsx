@@ -10,7 +10,7 @@ class Navigation extends Component<any, any> {
         super(props);
 
         this.state = {
-            currentComponent: <Menu onYesNoClick={this.handleYesNoClick} onDiceClick={this.handleDiceClick} />
+            currentComponent: <Menu onYesNoClick={this.handleYesNoClick} onDiceClick={this.handleDiceClick} onGroupClick={this.handleGroupClick}/>
         }
     }
 
@@ -27,12 +27,12 @@ class Navigation extends Component<any, any> {
 
     handleGroupClick = () => {
         this.setState({
-            currentComponent: <GroupDecider onBackClick={this.handleBackClick} />
+            currentComponent: <GroupDecider onBackClick={this.handleBackClick}/>
         })
     }
     handleBackClick = () => {
         this.setState({
-            currentComponent: <Menu onYesNoClick={this.handleYesNoClick} onDiceClick={this.handleDiceClick} />
+            currentComponent: <Menu onYesNoClick={this.handleYesNoClick} onDiceClick={this.handleDiceClick} onGroupClick={this.handleGroupClick}/>
         })
     }
 

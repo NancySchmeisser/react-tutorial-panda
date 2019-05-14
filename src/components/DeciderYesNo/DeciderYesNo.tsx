@@ -3,7 +3,7 @@ import './DeciderYesNo.css';
 
 
 interface DeciderYesNoProps {
-    onBackClick: () => void,
+    onBackClick: () => void
 }
 interface DeciderYesNoState {
     decision: string,
