@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Menu from '../Menu/Menu';
 import DeciderYesNo from '../DeciderYesNo/DeciderYesNo';
 import DeciderDice from '../DeciderDice/DeciderDice';
+import GroupDecider from '../GroupDecider/GroupDecider';
 
 class Navigation extends Component<any, any> {
 
@@ -9,23 +10,29 @@ class Navigation extends Component<any, any> {
         super(props);
 
         this.state = {
-            currentComponent: <Menu onYesNoClick={this.handleYesNoClick} onDiceClick={this.handleDiceClick}/>
+            currentComponent: <Menu onYesNoClick={this.handleYesNoClick} onDiceClick={this.handleDiceClick} />
         }
     }
 
     handleYesNoClick = () => {
         this.setState({
-            currentComponent: <DeciderYesNo onBackClick={this.handleBackClick}/>
+            currentComponent: <DeciderYesNo onBackClick={this.handleBackClick} />
         })
     }
     handleDiceClick = () => {
         this.setState({
-            currentComponent: <DeciderDice onBackClick={this.handleBackClick}/>
+            currentComponent: <DeciderDice onBackClick={this.handleBackClick} />
+        })
+    }
+
+    handleGroupClick = () => {
+        this.setState({
+            currentComponent: <GroupDecider onBackClick={this.handleBackClick} />
         })
     }
     handleBackClick = () => {
         this.setState({
-            currentComponent: <Menu onYesNoClick={this.handleYesNoClick} onDiceClick={this.handleDiceClick}/>
+            currentComponent: <Menu onYesNoClick={this.handleYesNoClick} onDiceClick={this.handleDiceClick} />
         })
     }
 

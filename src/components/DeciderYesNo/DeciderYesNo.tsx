@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './DeciderYesNo.css';
 
 
 interface DeciderYesNoProps {
